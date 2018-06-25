@@ -11,7 +11,8 @@ bot.on("ready", function(){
 
 bot.on("message", function(message) {
 
-
+//hello
+ 
     
     let adminRole =  message.guild.roles.find("name", "Admin");
     let ownerRole =  message.guild.roles.find("name", "Owner");
