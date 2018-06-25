@@ -1,0 +1,10 @@
+bot.on("guildMemberAdd", (member)=> {
+  console.log(`New User "${member.user.username}" has joined "${member.guild.name}"` );
+  member.guild.defaultChannel.sendMessage(`"${member.user.username}" has joined Type !Help for commands."`);
+});
+
+bot.on("guildMemberAdd", (member) => {
+    let role = message.guild.roles.find("name", "Member");
+    
+    member.addRole(role);
+});
